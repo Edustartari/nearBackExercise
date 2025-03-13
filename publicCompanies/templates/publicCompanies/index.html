@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Public American companies</title>
+  </head>
+  <body>
+    <p>Random American company info</p>
+    <div>
+        {% if name %}
+            <ul>
+                <li>NAME: <b>{{ name }}</b></li>
+                <li>TICKER: <b>{{ ticker }}</b></li>
+                <li>CIK: <b>{{ cik }}</b></li>
+                <li>EXCHANGE: <b>{{ exchange }}</b></li>
+            </ul>
+        {% else %}
+            <p>No data available.</p>
+        {% endif %}
+    </div>
+  </body>
+</html>
+
